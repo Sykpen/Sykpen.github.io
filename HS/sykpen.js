@@ -3,7 +3,7 @@ var page2content = document.getElementById("page2");
 var page3content = document.getElementById("page3");
 var qwer = document.getElementById("qwer");
 var readydeck = document.getElementById("readydeck");
-console.log('dsdsdsdsdsd');
+
 
 page2content.style.display = "none";
 page3content.style.display = "none";

@@ -6,7 +6,7 @@ var heroes = ["Druid","Hunter","Mage","Paladin","Priest","Rogue","Shaman","Warlo
 // var confirm = document.getElementById('confirm');
 // var deckname = document.getElementById('form').value;
 var current;
-console.log("хуй");
+
 // GLOBAL ELETE
 var modal = document.querySelector('.modal');
 var overflow = document.createElement('div');
