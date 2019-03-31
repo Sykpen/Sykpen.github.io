@@ -1,44 +1,26 @@
 // GLOBAL ELETE
 var main = document.getElementById("main");
-// var mrgl = https://steamuserimages-a.akamaihd.net/ugc/876377577844284839/0BCFF5D6F17D43FA58180B0676C4D46B6115FDA8/;
 var deck = document.getElementById('deck');
+
 var heroes = ["Druid","Hunter","Mage","Paladin","Priest","Rogue","Shaman","Warlock","Warrior"];
-// var confirm = document.getElementById('confirm');
-// var deckname = document.getElementById('form').value;
 var current;
-
 // GLOBAL ELETE
-var modal = document.querySelector('.modal');
-var overflow = document.createElement('div');
-function openWin() {
-        overflow.className = "overflow";
-        document.body.appendChild(overflow);
-        var height = modal.offsetHeight;
-        modal.style.marginTop = - height / 2 + "px";
-        modal.style.top = "50%";
-}
 
-if (!Element.prototype.remove) {
-        Element.prototype.remove = function remove() {
-                if (this.parentNode) {
-                        this.parentNode.removeChild(this);
-                }
-        };
-}
-
-overflow.onclick = function () {
-        modal.style.top = "-100%";
-        overflow.remove();
-}
- 
- 
 // FUNCTIONS
 
+function check(){
+    var el = deck.getElementsByTagName('img');
+    var deckarr = Array.from(el);
+    console.log(deckarr);
+}
 
+
+function save(){
+    var newobj = 1;
+}
 
 function fetchImage(src) {
     var newimg = document.createElement('img');
- 
     newimg.style.width = "200px";
     newimg.style.height = "300px";
     newimg.setAttribute('src', src)
@@ -50,19 +32,15 @@ function fetchImage(src) {
     newimg.addEventListener("dragstart", function(event) {
         current = this;
     });
- 
     main.appendChild(newimg);
 }
  
 function dataLoaded(data) {
- 
     var json = JSON.parse(data);
     console.log(json);
     for (var i = 100; i < 175; i++) {
         var img = json[i].imgGold;
- 
         fetchImage(img);
- 
     }
     deck.addEventListener('dragover', function(event) {
         event.preventDefault();
@@ -86,10 +64,6 @@ function clean1() {
 
 // FUNCTIONS
  
-
-
-
-
 
 
 //AJAX
