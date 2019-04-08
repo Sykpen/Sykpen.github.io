@@ -108,8 +108,8 @@ function check(){
     closeDeckName();
 };
 function aboutDeck(){
-    var userName = localStorage.getItem(deckName);
-    var deckName = document.getElementById("deckname").value;
+    var userName = document.getElementById('emailField').value;
+    var deckName = localStorage.getItem(deckName);
     var aboutDeckinfo = "У пользователя " + userName + ",есть колода под именем :" + deckName;
     deckInfo.innerHTML = aboutDeckinfo;
     console.log(aboutDeckinfo);
