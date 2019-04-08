@@ -108,20 +108,28 @@ function check(){
     closeDeckName();
 };
 function aboutDeck(){
+
     var userName = document.getElementById('emailField').value;
     var deckName = localStorage.getItem(deckName);
-    var aboutDeckinfo = "У пользователя " + userName + ",есть колода под именем :" + deckName;
-    deckInfo.innerHTML = aboutDeckinfo;
+
+    if(deckName === null){
+        var errormessage = "У данного пользователя отсутсвуют колоды.";
+        deckInfo.innerHTML = errormessage;
+    } else {
+        var aboutDeckinfo = "У пользователя " + userName + ",есть колода под именем :" + deckName;
+        deckInfo.innerHTML = aboutDeckinfo; 
+    };
+ 
     console.log(aboutDeckinfo);
 }
 
 function showdeck(){
     aboutDeck();
-    var deckName = document.getElementById("deckname").value;
-    var dataDeck = {};
-    dataDeck = JSON.parse(localStorage.getItem(deckName));
-     console.log(dataDeck);
-    // fordecks.appendChild(dataDeck);
+    // var deckName = document.getElementById("deckname").value;
+    // var dataDeck = {};
+    // dataDeck = JSON.parse(localStorage.getItem(deckName));
+
+    // // fordecks.appendChild(dataDeck);
 };
 
 
