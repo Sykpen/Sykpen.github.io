@@ -9,14 +9,16 @@
 	<link id="avast_os_ext_custom_font" href="css/fonts.css" rel="stylesheet" type="text/css">
 </head>
 <body onload="time()">
-
 		<div class="vverh">
 		<div class="wrapper">
 			<div class="futer_content">
 				<ul class="navigation">
-					<li><a class="head1"  id="gameinfo">Информация об игре</a></li>		
-					<li><a class="head2"  id="qwer">Конструктор колод</a></li>
-					<li><a class="head3"  id="readydeck">Готовые колоды</a></li>
+					<li><a class="head1"  id="gameinfo">Информация</a></li>	
+					<li><a class="head2"  id="qwer" onclick="hello()">Конструктор</a></li>
+					<li><a class="head3"  id="readydeck">Колоды</a></li>
+					<li><a class="head4"  id="sighin">Войти</a></li>
+					<li><a class="head5"  id="register">Зарегестрироваться</a></li>
+					<li><a class="head5"  id="logout">Выйти</a></li>
 				</ul>
 			</div>
 		</div>
@@ -39,33 +41,6 @@
 		</div>
 
 <div class="devide"></div>
-		<div class="content">
-			<div class="wrapper-news">
-				<h2>Новости</h2>
-				<div class="news ">
-					<div class="new wow flipInY">
-						<div class="image1"></div>
-						<div class="read">Вернисаж в таверне: Бумный день !</div>
-					</div>
-					<div class="new wow flipInY" data-wow-delay="1s">
-						<div class="image2" ></div>
-						<div class="read">Тыквовин пришел в Hearthstone!</div>
-					</div>
-					<div class="new wow flipInY" data-wow-delay="2s">
-						<div class="image3"></div>
-						<div class="read">Выберите своего чемпиона!</div>
-					</div>
-					<div class="new wow flipInY" data-wow-delay="3s">
-						<div class="image4"></div>
-						<div class="read">Интересные концепции колод.</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-
-
-		<div class="devide"></div>
 	<div class="new_player">
 		<div class="wrapperungoro"><h2 >Для новичков </h2>
 			<p><b>Вложите меч в ножны,</b> соберите свою колоду и приготовьтесь сыграть в Hearthstone — динамичную карточную стратегию. Играть в нее легко и увлекательно. Сражайтесь бесплатно! Разите врага картами заклинаний, призывайте существ на помощь, ведите в бой героев Warcraft, к новым победам и свершениям.</p></div>
@@ -91,72 +66,91 @@
 	<div class="devide"></div>
 	<div class="wrapper">
 		<div id="deckheader"></div>
-		
+		<div id="hello"></div>
 			<div class="heroesul">
-				<div class="hero" id="druid" onclick='testLoadData()'></div>
 				<div class="hero" id="hunter" onclick='testLoadData1()'></div>
-				<div class="hero" id="mage" onclick='testLoadData2()'></div>
-				<div class="hero" id="paladin" onclick='testLoadData3()'></div>
-				<div class="hero" id="priest" onclick='testLoadData4()'></div>
-				<div class="hero" id="rogue" onclick='testLoadData5()'></div>
-				<div class="hero" id="shaman" onclick='testLoadData6()'></div>
-				<div class="hero" id="warlock" onclick='testLoadData7()'></div>
-				<div class="hero" id="warrior" onclick='testLoadData8()'></div>
 			</div>
 		
 
 		<div id="buttons">
-			<input type=button onclick='byType()' value='Только заклинания' class="button19">
-			<input type=button onclick='classic()' value='Классические карты' class="button19">
-			<input type=button onclick='legendary()' value='Только Легендарные карты' class="button19">
-			<input type=button onclick='clean()' value='Сбросить классовые карты' class="button19">
-			<input type=button onclick='clean1()' value='Сохранить колоду' class="button19">
-			<input type=button onclick='check()' value='Проверить див' class="button19">
+			<input type=button onclick='closeDeckName()' value='Сохранить колоду' class="button19" id="save">
 		</div>
 			<div id="opisanie">
 				<div id="one"><h2>Все карты</h2></div>
 				<div id="two"><h2>Колода</h2></div>
 			</div>
 		<div id="alpha">
-			<div id="main" ></div>
+			<div id="main" >
+				<img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback "><img class="karta kartaback"><img class="karta kartaback"><img class="karta kartaback">
+			</div>
 			<div id="deck" ></div>
 		</div>
 	</div>
 </div>
 
 <div id="page3">
-		<div class="page3content">Грязные кобольды украли готовые колоды!!!</div>	
+	<div class="wrapper">
+		<div id="page3content">
+			<input type="button" onclick="showdeck()" class="button19" value="Показать информацию" id="buttonInfo">
+			<div id="deckInfo"></div>
+		</div>
+	</div>	
 </div>
 	<div class="futer">
 		<div class="wrapper">
-			<div class="futer_content">
+			
 				<ul class="navigation footer">
 					<li class="copy"><a class="futer0" >&copy; Designed by Sykpyn 2019</a></li>
-					<li><a class="futer1" href="https://eu.battle.net/forums/ru/hearthstone/">Официальный форум</a></li>		
+					<li><a class="futer1" href="https://eu.battle.net/forums/ru/hearthstone/">Форум</a></li>		
 					<li><a class="futer2" href="https://www.hearthpwn.com/">Актуальные колоды</a></li>
-					<li><a class="futer3" href="https://vk.com/hs_cafe_minsk">Hearthstone кафе в Минске</a></li>
+					<li><a class="futer3" href="https://vk.com/hs_cafe_minsk">Hearthstone кафе</a></li>
 				</ul>
-			</div>
 		</div>
 	</div>
-	
-	<div class="modal">
-		<input type="text" value="Введите название колоды" id="form">
-		<input type="button" value="Подтвердить" id="confirm">
+
+	<div class="modalregestr closed" id="modalregestr">
+		<input type="button" class="class-button" id="closeButtonregister" value="Закрыть">
+		<h1>Введите необходимые данные</h1>
+		<p>E-mail:<input type="text"  id="formemail" class="text"></p>
+		<p>Password:<input type="text"  id="formpassword" class="text"></p>
+		<input type="button" value="Зарегистрироваться" id="confirm" class="registernewuser" onclick="createuser()">
 	</div>
+
+
+	<div class="modalstart closed" id="modalstart">
+		<input type="button" class="class-button" id="close-buttonstart" value="Закрыть">
+		<h1>Введите e-mail и пароль</h1>
+		<p>E-mail:<input type="text"  id="emailField" class="text"></p>
+		<p>Password:<input type="text"  id="passwordField" class="text"></p>
+		<input type="button" value="Войти" id="confirm" onclick="login()" class="registernewuser">
+	</div>
+
+	<div class="modal closed" id="modalforDeck">
+		<input type="button" class="class-button" id="close-button" value="Закрыть">
+		<h1>Введите название колоды</h1>
+		<input type="text"  id="deckname" class="text">
+		<input type="button" value="Подтвердить" id="confirm" onclick="check()">
+	</div>
+	<div class="modal-overlay closed" id="modal-overlay"></div>
 <a href="#" class="to-top"></a>
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: "AIzaSyC5j9E1QxM65G3mKPxg3jscgvKEMYSEfGk",
+    authDomain: "sykpyn-7cc33.firebaseapp.com",
+    databaseURL: "https://sykpyn-7cc33.firebaseio.com",
+    projectId: "sykpyn-7cc33",
+    storageBucket: "sykpyn-7cc33.appspot.com",
+    messagingSenderId: "959364585932"
+  };
+  firebase.initializeApp(config);
+</script>
 <script src="sykpen.js"></script>
 <script type="text/javascript" src="dron.js"></script>
 <script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="scripts/script.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type="text/javascript" src="slick/slick.min.js"></script>
-
-
-
 </body>
-
 </html>
