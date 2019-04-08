@@ -79,8 +79,11 @@ display: block;
   outline: none;
   background: rgb(147,80,36) linear-gradient(rgb(106,58,26), rgb(147,80,36) 80%);
 }
+#passwordField{
+	margin-left: 4%;
+}
 #emailField{
-	margin-left: 43px;
+	margin-left: 4%;
 }
 .text{
 	margin-left: 20px;
