@@ -1,0 +1,265 @@
+body{
+	margin:0px;
+	padding: 0px;
+	background-color: #f9f9f9;
+}
+.wrapper{
+	width: 80%;
+	margin: auto;
+}
+.devide{
+	position: relative;
+	background-image: url(../imgA/line.gif);
+	height: 6px;
+	width: 100%;
+}
+.slider{
+	margin: auto;
+	width: 1300px;
+
+}
+.wrapper-news{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 40px;
+}
+.news{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.new{
+	width: 353px;
+	height: 200px;
+	box-sizing: border-box;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	background-color: #F6F6F3;
+
+}
+
+.image1{
+	width: 353px;
+	height: 90px;
+	background-image: url(../imgA/newnew1.jpg);
+background-size: cover;
+}
+.image2{
+	width: 353px;
+	height: 90px;
+	background-image: url(../imgA/newnew2.jpg);
+	background-size:cover;
+
+}
+.image3{
+	width: 353px;
+	height: 90px;
+	background-image: url(../imgA/newnew3.jpg);
+	background-size:cover;
+
+}
+.date{
+	border-bottom: 1px solid #D1D1D1;
+	padding-bottom: 10px;
+    margin-bottom: 7px;
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.text{
+	text-align: center;
+}
+.text p{
+	margin-top: 28px;
+	text-align: left;
+	color: #727272;
+    font-family: 'Arial';
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+.text h2{
+	color: #158FBD;
+}
+.flex4{
+	display: flex;
+	text-align: center;
+	line-height: 60px;
+}
+#flexitem1{
+	width: 25%;
+	height: 60px;
+	background-color: #A6286A;
+	color: white;
+	font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+}
+#flexitem2{
+	width: 25%;
+	height: 60px;
+	background-color: #F57D1F;
+	color: white;
+	    font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+}
+#flexitem3{
+	width: 25%;
+	height: 60px;
+	background-color: #158FBD;
+	color: white;
+	    font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+}
+#flexitem4{
+	width: 25%;
+	height: 60px;
+	background-color: #8AAD1F;
+	color: white;
+	    font-family: "Myriad Pro", sans-serif;
+    font-size: 25px;
+}
+.nav{
+	background-color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left:10%;
+}
+.headeritem{
+	list-style-type: none;
+	display: inline;
+}
+.header li > a{
+	color: #158fbd;
+    margin-right: 3px;
+    padding: 0 9px 1px 11px;
+    text-decoration: none;
+    font-size: 22px;
+}
+.logo{
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+.footer img{
+	float: right;
+}
+.prefooter{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#prevideo{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#mainimage{
+	text-align: center;
+}
+.text h2{
+	color: #0b971b;
+    font-size: 26px;
+    margin: 18px 0 10px;
+}
+.big{
+	display: flex;
+	width: 80%;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 50px;
+}
+#f1{
+	background-image: url(../imgA/book1.jpg);
+	background-size:cover;
+	width: 200px;
+	height: 300px;
+	
+}
+#f2{
+	background-image: url(../imgA/book2.jpg);
+	width: 200px;
+	height: 300px;
+	background-size: cover;
+}
+#f3{
+	background-image: url(../imgA/book3.jpg);
+	width: 200px;
+	height: 300px;
+	background-size: cover;
+}
+#f4{
+	background-image: url(../imgA/book4.jpg);
+	width: 200px;
+	height: 300px;
+	background-size: cover;
+}
+.spanflex{
+
+    color: #1d0f00;
+
+    font-family: "Myriad Pro Light", Calibri, Arial;
+    font-size: 28px;
+    text-align: center;
+}
+/*#sub {
+			    display: none;
+			    position: absolute;
+			    top: 100%;
+}
+
+#sub li {
+	min-width:170px;
+	float:none;
+	display:list-item;
+	position: relative;*/
+.tierlist{
+margin-top: 28px;
+	text-align: left;
+	color: #727272;
+    font-family: 'Arial';
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+.tierlist li:first-child{
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+.tierlist li:last-child{
+	margin-bottom: 30px;
+}
+#map{
+	text-align: left;
+}
+#basicinfo{
+	position: absolute;
+	left:820px;
+	top:530px;
+}
+.footertest{
+	position: absolute;
+	bottom: 1px;
+}
+.prefooter1{
+	width: 100%;
+}
+.navtest{
+	background-color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left:10%;
+}
+.ssilka{
+	text-decoration: none;
+	color: white;
+}
+.prebooks{
+	position: absolute;
+	bottom: 80px;
+}
+.devidetest{
+	margin-top: 50px;
+}
+.testtext{
+	margin-bottom: 50px;
+}
